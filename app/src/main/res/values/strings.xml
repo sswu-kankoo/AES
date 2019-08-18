@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AES</string>
+    <string name="inputText_message">"암호화할 내용을 입력하세요"</string>
+    <string name="password_message">"암호화에 사용할 키를 입력하세요"</string>
+    <string name="encBtn_message">"암호화 하기"</string>
+    <string name="decBtn_message">"복호화 하기"</string>
+</resources>

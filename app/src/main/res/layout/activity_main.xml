@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aes.MainActivity">
+
+    <!-- 암호화할 문자열 입력받는 부분 -->
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputText_message"
+        android:importantForAutofill="no"
+        tools:targetApi="o"
+        android:inputType="text" />
+
+    <!-- 패스워드 입력받는 부분 -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputText"
+        android:hint="@string/password_message"
+        android:importantForAutofill="no"
+        tools:targetApi="o"
+        android:inputType="textPassword"/>
+
+    <!-- 결과값 출력하는 부분 -->
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"/>
+
+    <!-- 암호화 버튼 -->
+    <Button
+        android:id="@+id/encBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outputText"
+        android:text="@string/encBtn_message" />
+
+    <!-- 복호화 버튼 -->
+    <Button
+        android:id="@+id/decBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encBtn"
+        android:text="@string/decBtn_message" />
+
+
+</RelativeLayout>
